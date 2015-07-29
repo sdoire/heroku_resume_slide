@@ -5,7 +5,8 @@ $(document).ready(function(){
         });
 
     $("body").on('click', '#container', function(){
-        $(this).slideUp();
-        $('#button').show();
+        $(this).slideUp("fast", function(){
+            $('#button').show();
+        });
     });
 });
